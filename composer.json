@@ -1,0 +1,13 @@
+{
+    "name": "candeo2/alchemyst-forms",
+    "authors": [
+        {
+            "name": "Sam Oldenburg",
+            "email": "sam@candeocreative.com"
+        }
+    ],
+    "require": {
+        "paquettg/php-html-parser": "^1.7",
+        "phlib/encrypt": "^2.0"
+    }
+}

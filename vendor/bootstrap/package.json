@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-gulp",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 Sass with Gulp",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larrygeams/bootstrap-gulp.git"
+  },
+  "author": "Larry Geams Parangan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larrygeams/bootstrap-gulp/issues"
+  },
+  "homepage": "https://github.com/larrygeams/bootstrap-gulp#readme"
+}

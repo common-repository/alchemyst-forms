@@ -1,0 +1,444 @@
+/* Shortcode metabox */
+#af-form-shortcode input {
+    width: 100%;
+}
+
+#af-form-shortcode h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Tab sections */
+#alchemyst-forms-tabs {
+    border-bottom: 1px solid #ccc;
+}
+
+#alchemyst-forms-tabs .nav-tab {
+    font-size: 14px;
+}
+
+#alchemyst-forms-tabs .nav-tab:first-child {
+    margin-left: 0;
+}
+
+#alchemyst-forms-tabs .nav-tab:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#alchemyst-forms-tabs .nav-tab-active {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.alchemyst-forms-tab-section {
+    display: none;
+}
+
+.af-tab-section-show-until-init {
+    display: block;
+}
+
+.alchemyst-forms-tab-section.alchemyst-forms-tab-section-active {
+    display: block;
+}
+
+/* Main metabox */
+.alchemyst-forms-editor-wrap {
+    position: relative;
+    height: 600px;
+    border: 1px solid #ccc;
+}
+
+.alchemyst-forms-notification .alchemyst-forms-editor-wrap {
+    height: 300px;
+}
+
+.alchemyst-forms-notification input {
+    width: 100%;
+}
+
+.alchemyst-forms-notification textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.alchemyst-forms-editor-wrap pre {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#alchemyst-forms-add-notification span.dashicons.dashicons-plus {
+    position: relative;
+    left: -5px;
+    top: 5px;
+}
+
+
+.alchemyst-forms-notification .collapse-header {
+    padding: 0.01em 1em;
+    background: #eee;
+    border-bottom: 3px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.alchemyst-forms-notification .collapse-header .icon-left {
+    margin-right: 0.5em;
+}
+
+.alchemyst-forms-notification .collapse-header .icon-right {
+    float: right;
+}
+
+.alchemyst-forms-notification .collapsable {
+    display: none;
+}
+
+.alchemyst-forms-notification .collapsable.open {
+    display: block;
+}
+
+#alchemyst-forms-notifications-wrap .alchemyst-forms-notification {
+    margin-bottom: 1em;
+}
+
+#alchemyst-forms-notifications-wrap .alchemyst-forms-notification:last-child {
+    margin-bottom: 0;
+}
+
+.alchemyst-forms-text-right {
+    text-align: right;
+}
+
+a.delete-notification {
+    color: red;
+}
+
+a.alchemyst-forms-field-name {
+    display: inline-block;
+    padding: 4px 6px 5px 6px;
+    background: #f5f5f5;
+    margin: 0px 5px 5px 0px;
+    border-radius: 3px;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    text-decoration: none;
+}
+
+/* Data tables */
+
+.alchemyst-forms-entries-table {
+    width: 100% !important; /* Needs to override a style applied on element */
+}
+
+.alchemyst-forms-entries-table th {
+    font-weight: bold;
+    cursor: move;
+}
+
+.alchemyst-forms-entries-table thead tr th:first-child,
+.alchemyst-forms-entries-table thead tr th:nth-child(2) {
+    cursor: pointer;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    background-repeat: no-repeat;
+    background-position: center right
+}
+table.dataTable thead .sorting {
+    background-image: url("http://cdn.datatables.net/1.10.12/images/sort_both.png")
+}
+table.dataTable thead .sorting_asc {
+    background-image: url("http://cdn.datatables.net/1.10.12/images/sort_asc.png")
+}
+table.dataTable thead .sorting_desc {
+    background-image: url("http://cdn.datatables.net/1.10.12/images/sort_desc.png")
+}
+table.dataTable thead .sorting_asc_disabled {
+    background-image: url("http://cdn.datatables.net/1.10.12/images/sort_asc_disabled.png")
+}
+table.dataTable thead .sorting_desc_disabled {
+    background-image: url("http://cdn.datatables.net/1.10.12/images/sort_desc_disabled.png")
+}
+
+.dataTables_length {
+    float :left;
+    margin-bottom: 10px;
+}
+
+.dataTables_filter {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.dataTables_filter input {
+    margin-left: 10px;
+}
+
+.dataTables_info {
+    margin-top: 10px;
+    float: left;
+}
+
+.dataTables_paginate {
+    margin-top: 10px;
+    float: right;
+}
+
+.dataTables_paginate .paginate_button {
+    margin-left: 5px;
+}
+
+div.dt-button-background {
+    z-index: 99999 !important;
+}
+
+div.dt-button-collection {
+    z-index: 100000 !important;
+}
+
+/* Entry details table */
+.post-type-af-entries a.page-title-action {
+    display: none;
+}
+
+.entry-details-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.entry-details-table tr:last-child {
+    border-bottom: 0;
+}
+
+.entry-details-table tr:nth-child(2n) {
+    background: #f9f9f9;
+}
+
+.entry-details-table th {
+    padding-left: 10px;
+}
+
+.form-table input.long {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+div#input-builder-modal-wrap {
+}
+
+#input-builder-modal-wrap .modal-rel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#input-builder-modal-wrap .modal-rel .modal {
+}
+
+#input-builder-modal-wrap .modal-rel .modal .modal-content {
+    position: relative;
+}
+
+#input-builder-modal-wrap .modal-rel .modal .modal-content .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#input-builder-modal-wrap h3 {
+    clear: both;
+}
+
+#input-builder-modal-wrap fieldset {
+    height: 65px;
+    width: 25%;
+    float: left;
+    padding-right: 2%;
+    box-sizing: border-box;
+}
+
+#input-builder-modal-wrap fieldset label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+}
+
+#input-builder-modal-wrap fieldset input[type="text"],
+#input-builder-modal-wrap fieldset input[type="number"],
+#input-builder-modal-wrap fieldset select {
+    width: 100%;
+}
+
+
+#ib-result code {
+    width: 100%;
+    display: block;
+    padding: 0.01em 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#input-builder-modal-wrap #ib-repeat-builder {
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0;
+    height: auto;
+}
+
+#input-builder-modal-wrap #ib-repeat-builder input {
+    display: inline;
+    width: auto;
+    margin-bottom: 0.5em;
+}
+
+#ib-repeat-shell {
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#ib-repeat-shell .repeat .repeat-handle {
+    transform: translateY(4px) scale(0.75);
+    color: #999;
+    cursor: move;
+}
+
+#ib-repeat-shell .repeat .remove {
+    color: red;
+    display: none;
+}
+
+#ib-repeat-shell .repeat:not(:first-child):hover .remove {
+    display: inline;
+}
+
+td.alchemyst-forms-value ul, td.alchemyst-forms-value ol {
+    padding-left: 2em;
+}
+td.alchemyst-forms-value ul li {
+    list-style: disc;
+}
+td.alchemyst-forms-value ul ul li {
+    list-style: circle;
+}
+td.alchemyst-forms-value ol li {
+    list-style: decimal;
+}
+
+p.alchemyst-forms-valid-state {
+    background: #5fd863;
+    color: #fff;
+    padding: 1em;
+    margin: 1em 0 !important;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+}
+
+p.alchemyst-forms-valid-state.free {
+    background: #ffa500;
+}
+
+p.alchemyst-forms-valid-state a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p.alchemyst-forms-valid-state a:hover {
+    text-decoration: underline;
+}
+
+#ib-input-builder-reset {
+    color: white;
+}
+
+
+p.alchemyst-license-required {
+    background: #09202C;
+    color: #fff;
+    padding: 4em 2em;
+    margin: 2em 0;
+    font-size: 14px;
+    text-align: center;
+
+
+    position: relative;
+    overflow: hidden;
+}
+
+p.alchemyst-license-required img {
+    max-width: 300px;
+    height: auto;
+    position: absolute;
+    right: -100px;
+    bottom: -150px;
+}
+
+p.alchemyst-license-required a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+p.alchemyst-license-required a:hover,
+p.alchemyst-license-required a:focus {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    p.alchemyst-license-required img {
+        display: none;
+    }
+}
+
+.alchemyst-forms-logo {
+    float: right;
+    padding: 5px;
+}
+
+.postbox-container .alchemyst-forms-logo {
+    padding: 0;
+    margin-bottom: -1px;
+}
+
+.wrap .alchemyst-forms-logo {
+    padding: 0;
+}
+
+.alchemyst-forms-logo a {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+p[data-af-slide-toggle] {
+    display: none;
+}
+
+a#alchemyst-forms-add-notification[disabled] {
+    display: none;
+}

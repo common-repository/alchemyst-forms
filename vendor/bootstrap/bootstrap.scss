@@ -1,0 +1,146 @@
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+// Alchemyst Forms Bootstrap Core //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+// Customization steps:
+// First, you will need to have Node/NPM installed.
+// 1. Copy this file to a folder in your theme or child theme named /alchemyst-forms/bootstrap/
+// 2. Via command line, navigate to the folder you just made and run `npm install`
+// 3. Run `gulp` to start watching all scss files for changes. The output css will go to /alchemyst-forms/bootstrap/css/
+//    as a file named `bootstrap.css`
+// 4. Make sure you disable the "Include Bootstrap Styles" setting under Contact Forms -> Settings in your Wordpress
+//    dashboard!
+// 5. Enqueue the new style to your new css file in your theme/child theme's `functions.php`
+//    function my_custom_alchemyst_forms_bootstrap_styles() {
+//      wp_enqueue_style('my-custom-alchemyst-forms-bootstrap-styles', get_stylesheet_directory_uri() . '/alchemyst/boostrap/css/bootstrap.css');
+//    }
+//    add_action('wp_enqueue_scripts', 'my_custom_alchemyst_forms_bootstrap_styles');
+
+
+// First wrap everything in a class to keep our styles from interfering with other themes or plugins
+.alchemyst-form {
+    // ---------------------------------------------------- //
+    //          Customize bootstrap variables here          //
+    // ---------------------------------------------------- //
+    $gray-dark:                 #373a3c;
+    $gray:                      #55595c;
+    $gray-light:                #818a91;
+    $gray-lighter:              #eceeef;
+    $gray-lightest:             #f7f7f9;
+
+    $brand-primary:             #022a41;
+    $brand-success:             #44bfa4;
+    $brand-info:                #5bc0de;
+    $brand-warning:             #fdb73b;
+    $brand-danger:              #c21f44;
+    $brand-inverse:             $gray-dark;
+
+    $state-success-text:        desaturate(darken($brand-success, 25%), 15%);
+    $state-success-bg:          desaturate(lighten($brand-success, 30%), 15%);
+    $state-success-border:      darken($state-success-bg, 5%);
+
+    $state-info-text:           desaturate(darken($brand-info, 25%), 15%);
+    $state-info-bg:             desaturate(lighten($brand-info, 30%), 25%);
+    $state-info-border:         darken($state-info-bg, 7%);
+
+    $state-warning-text:        desaturate(darken($brand-warning, 35%), 10%);
+    $state-warning-bg:          desaturate(lighten($brand-warning, 30%), 25%);
+    $mark-bg:                   $state-warning-bg;
+    $state-warning-border:      darken($state-warning-bg, 5%);
+
+    $state-danger-text:         desaturate(darken($brand-danger, 25%), 15%);
+    $state-danger-bg:           desaturate(lighten($brand-danger, 30%), 25%);
+    $state-danger-border:       darken($state-danger-bg, 5%);
+
+    $border-radius: 0;
+
+    $alert-padding: 0.5rem;
+
+
+    // ---------------------------------------------------- //
+    //                 Parent container CSS                 //
+    // ---------------------------------------------------- //
+    // Nothing is included by default, but if you'd like to define
+    // some styles here to be applied to .alchemyst-form you can
+
+    // font-size: 14px;
+
+    // ---------------------------------------------------- //
+    //                   Import Bootstrap                   //
+    // ---------------------------------------------------- //
+    @import 'scss/bootstrap';
+
+
+    // ---------------------------------------------------- //
+    //         Override bootstrap declarations here         //
+    // ---------------------------------------------------- //
+
+
+    // ---------------------------------------------------- //
+    //             Any other custom styles here             //
+    // ---------------------------------------------------- //
+    .validate-failed {
+        border: 1px solid $brand-danger;
+    }
+
+    .alchemyst-required {
+        color: $brand-danger;
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    /* Preloader */
+    .alchemyst-forms-preloader {
+        position:relative;
+        height: 20px;
+        margin: 1em 0;
+        left: 20px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+    }
+
+    &.af-ajax-form-loading .alchemyst-forms-preloader {
+        opacity: 1;
+    }
+
+    .alchemyst-forms-preloader:before {
+        width:20px;
+        height:20px;
+        border-radius:20px;
+        content:'';
+        position:absolute;
+        background:$brand-primary;
+        animation: alchemyst_forms_preloader_before 1.5s infinite ease-in-out;
+    }
+
+    .alchemyst-forms-preloader:after {
+        width:20px;
+        height:20px;
+        border-radius:20px;
+        content:'';
+        position:absolute;
+        background:$brand-info;
+        left:22px;
+        animation: alchemyst_forms_preloader_after 1.5s infinite ease-in-out;
+    }
+
+    @keyframes alchemyst_forms_preloader_before {
+        0% {transform: translateX(0px) rotate(0deg)}
+        50% {transform: translateX(50px) scale(1.2) rotate(260deg); background:$brand-primary;border-radius:0px;}
+        100% {transform: translateX(0px) rotate(0deg)}
+    }
+
+    @keyframes alchemyst_forms_preloader_after {
+        0% {transform: translateX(0px)}
+        50% {transform: translateX(-50px) scale(1.2) rotate(-260deg);background:$brand-info;border-radius:0px;}
+        100% {transform: translateX(0px)}
+    }
+
+    .wp-editor-wrap {
+        border: 1px solid $input-border-color;
+    }
+
+    .form-group > label {
+        margin-bottom: 0;
+    }
+}
